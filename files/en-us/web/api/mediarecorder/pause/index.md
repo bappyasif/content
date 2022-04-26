@@ -31,7 +31,7 @@ browser queues a task that runs the below steps:
 ## Syntax
 
 ```js
-MediaRecorder.pause()
+pause()
 ```
 
 ### Return value
@@ -45,7 +45,7 @@ MediaRecorder.pause()
     the recording if the `MediaRecorder` is not active. If you call `pause()` while already paused,
     the method silently does nothing.
 
-## Example
+## Examples
 
 ```js
 ...
@@ -73,5 +73,5 @@ MediaRecorder.pause()
 - [Web Dictaphone](https://mdn.github.io/web-dictaphone/): MediaRecorder +
   getUserMedia + Web Audio API visualization demo, by [Chris Mills](https://twitter.com/chrisdavidmills) ([source on GitHub](https://github.com/mdn/web-dictaphone/).)
 - [simpl.info MediaStream Recording
-  demo](http://simpl.info/mediarecorder/), by [Sam Dutton](https://twitter.com/sw12).
+  demo](https://simpl.info/mediarecorder/), by [Sam Dutton](https://twitter.com/sw12).
 - {{domxref("Navigator.getUserMedia")}}

@@ -28,7 +28,7 @@ Gecko now uses the [HTML5](/en-US/docs/Web/Guide/HTML/HTML5) parser, which fixes
   - : A look at improvements to web forms in HTML5. Among these changes are added input types in the {{HTMLElement("input")}} element, data validation, and more.
 - [HTML5 Sections](/en-US/docs/Web/HTML/Element/Heading_Elements)
   - : Gecko now supports the new HTML5 elements related to sections in a document: {{HTMLElement("article")}}, {{HTMLElement("section")}}, {{HTMLElement("nav")}}, {{HTMLElement("aside")}}, {{HTMLElement("hgroup")}}, {{HTMLElement("header")}} and {{HTMLElement("footer")}}.
-- [HTML5 hidden attribute](/en-US/docs/Web/HTML/Global_attributes#attr-hidden)
+- [HTML5 hidden attribute](/en-US/docs/Web/HTML/Global_attributes#hidden)
   - : This attribute, common to all elements, is used to hide content in a webpage that is not currently relevant to the user.
 - Other HTML5 elements
   - : Gecko now also supports the following new HTML5 elements: {{HTMLElement("mark")}}, {{HTMLElement("figure")}}, and {{HTMLElement("figcaption")}}.
@@ -55,7 +55,7 @@ The following changes were made to the {{domxref("CanvasRenderingContext2D")}} i
 - Support for the obsolete {{HTMLElement("spacer")}} element, which was absent in all other browsers, has been removed.
 - The {{HTMLElement("isindex")}} element, when created by calling {{domxref("document.createElement()")}}, is now created as a simple element with no properties or methods.
 - Gecko now supports calling `click()` on {{HTMLElement("input")}} elements to open the file picker. See the [example](</en-US/docs/Web/API/File/Using_files_from_web_applications#using_hidden_file_input_elements_using_the_click()_method>) in the article [Using files from web applications](/en-US/docs/Web/API/File/Using_files_from_web_applications).
-- The {{HTMLElement("input")}} element supports a new [`mozactionhint`](/en-US/docs/Web/HTML/Element/input#attr-mozactionhint) attribute, which lets you specify the label for the enter key on virtual keyboards.
+- The {{HTMLElement("input")}} element supports a new [`mozactionhint`](/en-US/docs/Web/HTML/Element/input#mozactionhint) attribute, which lets you specify the label for the enter key on virtual keyboards.
 - {{HTMLElement("script")}} elements inside {{HTMLElement("iframe")}}, {{HTMLElement("noembed")}}, and {{HTMLElement("noframes")}} elements now get executed, which they weren't in previous versions of Firefox. This is in compliance with the specification, and matches the behavior of other browsers.
 
 ### CSS
@@ -429,8 +429,8 @@ Remote XUL is no longer supported; this affects XUL documents being served throu
 
 #### Miscellaneous storage API changes
 
-- The {{interface("mozIStorageBindingParamsArray")}} interface now has a length attribute that indicates the number of {{interface("mozIStorageBindingParams")}} objects in the array.
-- The {{ifmethod("mozIStorageStatement", "bindParameters")}} now returns an error if the specified {{interface("mozIStorageBindingParamsArray")}} is empty.
+- The `mozIStorageBindingParamsArray` interface now has a length attribute that indicates the number of `mozIStorageBindingParams` objects in the array.
+- The {{ifmethod("mozIStorageStatement", "bindParameters")}} now returns an error if the specified `mozIStorageBindingParamsArray` is empty.
 - Added the {{ifmethod("mozIStorageConnection", "clone")}} method, which lets you clone an existing database connection.
 - Added the {{ifmethod("mozIStorageConnection", "asyncClose")}} method, which lets you close a database connection asynchronously; you specify a callback to be notified when the close operation is complete.
 - Added the {{ifmethod("mozIStorageConnection", "setGrowthIncrement")}} method, which lets you specify the amount by which a database file is grown at a time, in order to help SQLite reduce fragmentation.
@@ -482,7 +482,7 @@ In addition to the specific changes referenced below, it's important to note tha
 - The `accessibility.disablecache` preference is no longer supported; it was only exposed for debugging purposes and is no longer used.
 - Addons whose GUID changes from one version to another can now be updated properly.
 - As a side effect of the removal of platform-specific directories in add-on bundles, you can no longer provide different default preferences for each platform.
-- By default, [extensions are no longer unpacked when they are installed](https://blog.mozilla.com/mwu/2010/09/10/extensions-now-installed-packed/), but are instead run directly from the XPI file. Extensions can use the [unpack](/en-US/docs/Install_Manifests#unpack) property in the [install manifest](/en-US/docs/Install_Manifests) to choose the old behavior. Extensions that use binary components, DLLs loaded using [js-ctypes](/en-US/docs/js-ctypes), [search plugins](/en-US/docs/Web/OpenSearch), dictionaries, and window icons must specify that they need to be unpacked. Extensions that [create SQLite database](/en-US/docs/XUL_School/Local_Storage#SQLite), or do copy things from the filesystem relatively to the extension's directory, may also need to change their code.
+- By default, [extensions are no longer unpacked when they are installed](https://blog.mozilla.org/mwu/2010/09/10/extensions-now-installed-packed/), but are instead run directly from the XPI file. Extensions can use the [unpack](/en-US/docs/Install_Manifests#unpack) property in the [install manifest](/en-US/docs/Install_Manifests) to choose the old behavior. Extensions that use binary components, DLLs loaded using [js-ctypes](/en-US/docs/js-ctypes), [search plugins](/en-US/docs/Web/OpenSearch), dictionaries, and window icons must specify that they need to be unpacked. Extensions that [create SQLite database](/en-US/docs/XUL_School/Local_Storage#SQLite), or do copy things from the filesystem relatively to the extension's directory, may also need to change their code.
 - You may now include extensions that [automatically get installed at application startup](/en-US/docs/Mozilla/Developer_guide/Customizing_Firefox#including_extensions_with_your_distribution_of_firefox) within a customized Firefox.
 
 ## Other changes

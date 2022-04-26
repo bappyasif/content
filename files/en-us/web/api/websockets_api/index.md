@@ -41,8 +41,6 @@ The **WebSocket API** is an advanced technology that makes it possible to open a
 - [AsyncAPI](https://www.asyncapi.com/): A specification for describing event-driven architectures like WebSocket. You can use it to describe WebSocket-based APIs just as you would describe REST APIs with the OpenAPI specification. Learn [why you should consider using AsyncAPI with WebSocket](https://www.asyncapi.com/blog/websocket-part1) and [how to do so](https://www.asyncapi.com/blog/websocket-part2).
 - [HumbleNet](https://hacks.mozilla.org/2017/06/introducing-humblenet-a-cross-platform-networking-library-that-works-in-the-browser/): A cross-platform networking library that works in the browser. It consists of a C wrapper around WebSockets and WebRTC that abstracts away cross-browser differences, facilitating the creation of multi-user networking functionality for games and other apps.
 - [µWebSockets](https://github.com/uNetworking/uWebSockets): Highly scalable WebSocket server and client implementation for [C++11](https://isocpp.org/) and [Node.js](https://nodejs.org).
-- [ClusterWS](https://github.com/ClusterWS/ClusterWS):  Lightweight, fast and powerful framework for building scalable WebSocket applications in [Node.js](https://nodejs.org).
-- [CWS](https://github.com/ClusterWS/cWS): Fast C++ WebSocket implementation for Node.js (uWebSockets v0.14 fork)
 - [Socket.IO](https://socket.io): A long polling/WebSocket based third party transfer protocol for [Node.js](https://nodejs.org).
 - [SocketCluster](https://socketcluster.io/): A pub/sub WebSocket framework for [Node.js](https://nodejs.org) with a focus on scalability.
 - [WebSocket-Node](https://github.com/theturtle32/WebSocket-Node): A WebSocket server API implementation for [Node.js](https://nodejs.org).
@@ -54,7 +52,7 @@ The **WebSocket API** is an advanced technology that makes it possible to open a
 - [jsonrpc-bidirectional](https://github.com/bigstepinc/jsonrpc-bidirectional): Asynchronous RPC which, on a single connection, may have functions exported on the server and, and the same time, on the client (client may call server, server may also call client).
 - [cowboy](https://github.com/ninenines/cowboy): Cowboy is a small, fast and modern HTTP server for Erlang/OTP with WebSocket support.
 - [WebSocket King](https://websocketking.com): A client tool to help develop, test and work with WebSocket servers.
-- [PHP WebSocket Server](https://github.com/napengam/phpWebSocketServer): Server written in PHP to handle connections via websocksets wss\:// or ws\://and normal sockets over ssl:// ,tcp\://
+- [PHP WebSocket Server](https://github.com/napengam/phpWebSocketServer): Server written in PHP to handle connections via websockets wss\:// or ws\://and normal sockets over ssl:// ,tcp\://
 - [Channels](https://channels.readthedocs.io/en/stable/index.html): Django library that adds support for WebSockets (and other protocols that require long running asynchronous connections).
 - [Flask-SocketIO](https://flask-socketio.readthedocs.io/en/latest/): gives Flask applications access to low latency bi-directional communications between the clients and the server.
 - [Gorilla WebSocket](https://pkg.go.dev/github.com/gorilla/websocket): Gorilla WebSocket is a [Go](https://golang.org/) implementation of the WebSocket protocol.

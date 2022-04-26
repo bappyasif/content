@@ -89,7 +89,7 @@ tags:
 - By default, the `scrollbars` {{domxref("Window")}} feature is enabled when calling {{domxref("Window.open()")}}. In the past, while it was strongly recommended to enable it, it wasn't the default ({{bug(1257887)}}).
 - Added the _experimental_ and _non-standard_ {{domxref("HTMLMediaElement.seekToNextFrame()")}} method, which allows seeking frame-by-frame through video content ({{bug(1235301)}}). While you're encouraged to experiment with this method to help us understand how useful it is, _do not use it in production code!_
 - The {{domxref("HTMLLabelElement.form")}} property now returns the form with which the label's control is associated, if there is a control (and if that control is associated with a form). Previously, labels were directly associated with forms using this property ({{bug(1268852)}}).
-- Support for the third parameter of {{domxref("EventTarget.addEventListener()")}}, either a {{jsxref("Boolean")}} or an {{interface("EventListenerOptions")}} has been added ({{bug(1266164)}} and {{bug(1266066)}}).
+- Support for the third parameter of {{domxref("EventTarget.addEventListener()")}}, either a {{jsxref("Boolean")}} or an `EventListenerOptions` has been added ({{bug(1266164)}} and {{bug(1266066)}}).
 - The audio volume related values for {{domxref("KeyboardEvent.key")}} have been renamed. `"VolumeDown"` is now `"AudioVolumeDown"`, `"VolumeUp"` is now `"AudioVolumeUp"`, and `"VolumeMute"` is now `"AudioVolumeMute".` This brings Firefox into alignment with the latest draft of the UI Events specification ({{bug(1272578)}}). See {{SectionOnPage("/en-US/docs/Web/API/KeyboardEvent/code", "Code values")}} for a full list of available key codes.
 - The keys previously referred to as `"MozHomeScreen"`, `"MozCameraFocusAdjust"`, and `"MozPhoneCall"` now have official names in the UI Events specification: `"GoHome"`, `"CameraFocus"`, and `"Call"`. Firefox 49 has been updated to use the new names ({{bug(1272599)}}). See {{SectionOnPage("/en-US/docs/Web/API/KeyboardEvent/code", "Code values")}} for a full list of available key codes.
 - The key values `"Separator"` and `"MediaSkip"` have been removed, as they were deprecated and unused ({{bug(1232919)}}).
@@ -140,7 +140,7 @@ tags:
 #### Others
 
 - {{domxref("XMLHttpRequest.getResponseHeader()")}} and {{domxref("XMLHttpRequest.getAllResponseHeaders()")}} return empty headers in case the preference `network.http.keep_empty_response_headers_as_empty_string` is set to `true` ({{bug(669259)}}).
-- The Firefox OS-only [Data Store API](/en-US/docs/Archive/Firefox_OS/API/Data_Store_API) has been removed ({{bug(1261009)}}).
+- The Firefox OS-only Data Store API has been removed ({{bug(1261009)}}).
 - The [Fullscreen API](/en-US/docs/Web/API/Fullscreen_API) event handlers `Document.onfullscreenchange` and `Document.onfullscreenerror` have been removed from {{domxref("Element")}} as they were never fired there; the prefixed versions of these event handlers have been kept there for compatibility purposes, however ({{bug(1270386)}}). Note that this is not yet activated by default, but is behind the `full-screen-api.unprefix.enabled` preference ({{bug(1268749)}}).
 - The obsolete `Document.mozFullScreen` property has been unprefixed to {{domxref("Document.fullscreen")}} {{bug(1269157)}}. Note that this is not yet activated by default by behind the `full-screen-api.unprefix.enabled` preference ({{bug(1268749)}}).
 - The read-only properties {{domxref("Document/fullscreenElement", "Document.fullscreenElement")}} and {{domxref("Document.fullscreenEnabled")}} no longer throw an exception if an attempt is made to change their values; instead, the new value is silently ignored and the setter function is a no-op ({{bug(1269798)}}).
@@ -189,7 +189,7 @@ This marks the next step in the journey toward a plugin-free future. HTML is ver
 
 ## Compatibility
 
-In order to improve compatibility with existing content, Firefox now accepts some webkit prefixed properties and attributes.
+In order to improve compatibility with existing content, Firefox now accepts some WebKit prefixed properties and attributes.
 
 - The following properties now also work prefixed with `-webkit`:
 

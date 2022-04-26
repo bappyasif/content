@@ -298,8 +298,8 @@ Let's look at an example, using Wave.
 
 [Deque's aXe tool](https://www.deque.com/products/axe/) goes a bit further than the auditing tools we mentioned above. Like the others, it checks pages and returns accessibility errors. Its most immediately useful form is probably the browser extensions:
 
-- [aXe for Chrome](https://bitly.com/aXe-Chrome)
-- [aXe for Firefox](https://bit.ly/aXe-Firefox)
+- [aXe for Chrome](https://chrome.google.com/webstore/detail/axe-devtools-web-accessib/lhdoppojpmngadmnindnejefpokejbdd)
+- [aXe for Firefox](https://addons.mozilla.org/en-US/firefox/addon/axe-devtools/)
 
 These add an accessibility tab to the browser developer tools. For example, we installed the Firefox version, then used it to audit our [bad-table.html](https://mdn.github.io/learning-area/accessibility/html/bad-table.html) example. We got the following results:
 
@@ -312,8 +312,8 @@ aXe is also installable using `npm`, and can be integrated with task runners lik
 It is definitely worth testing with a screenreader to get used to how severely visually impaired people use the Web. There are a number of screenreaders available:
 
 - Some are paid-for commercial products, like [JAWS](https://www.freedomscientific.com/Products/Blindness/JAWS) (Windows) and [Window Eyes](http://www.gwmicro.com/window-eyes/) (Windows).
-- Some are free products, like [NVDA](https://www.nvaccess.org/) (Windows), [ChromeVox](http://www.chromevox.com/) (Chrome, Windows, and Mac OS X), and [Orca](https://wiki.gnome.org/Projects/Orca) (Linux).
-- Some are built into the operating system, like [VoiceOver](https://www.apple.com/accessibility/osx/voiceover/) (Mac OS X and iOS), [ChromeVox](http://www.chromevox.com/) (on Chromebooks), and [TalkBack](https://play.google.com/store/apps/details?id=com.google.android.marvin.talkback) (Android).
+- Some are free products, like [NVDA](https://www.nvaccess.org/) (Windows), [ChromeVox](https://support.google.com/chromebook/answer/7031755) (Chrome, Windows, and macOS), and [Orca](https://wiki.gnome.org/Projects/Orca) (Linux).
+- Some are built into the operating system, like [VoiceOver](https://www.apple.com/accessibility/vision/) (macOS and iOS), [ChromeVox](https://support.google.com/chromebook/answer/7031755) (on Chromebooks), and [TalkBack](https://play.google.com/store/apps/details?id=com.google.android.marvin.talkback) (Android).
 
 Generally, screen readers are separate apps that run on the host operating system and can read not only web pages, but text in other apps as well. This is not always the case (ChromeVox is a browser extension), but usually. Screenreaders tend to act in slightly different ways and have different controls, so you'll have to consult the documentation for your chosen screen reader to get all of the details — saying that, they all work in basically the same sort of way.
 

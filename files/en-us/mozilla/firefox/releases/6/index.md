@@ -20,7 +20,7 @@ Firefox 6, based on Gecko 6.0, was released on August 16, 2011. This article pro
 - {{ HTMLElement("form") }} elements' text {{ HTMLElement("input") }} fields no longer support the XUL [`maxwidth`](/en-US/docs/XUL/Property/maxwidth) property; this was never intentional, and is in violation of the HTML specification. You should instead use the {{ HTMLAttrXref("size", "input") }} attribute to set the maximum width of input fields.
 - The {{ HTMLElement("canvas") }} {{ domxref("CanvasRenderingContext2d") }} properties `fillStyle` and `strokeStyle` used to ignore garbage included after a valid color definition; now this is correctly treated as an error. For example, "red blue" as a color used to be treated as "red", when it should have been ignored.
 - The width and height of {{ HTMLElement("canvas") }} elements can now properly be set to 0px; previously, these were getting arbitrarily set to 300px when you tried to do that.
-- Support for the HTML [custom data attributes](/en-US/docs/Web/HTML/Global_attributes#attr-data-*) (data-\*) has been added. The DOM {{ domxref("element.dataset") }} property allows to access them.
+- Support for the HTML [custom data attributes](/en-US/docs/Web/HTML/Global_attributes#data-) (`data-*`) has been added. The DOM {{ domxref("element.dataset") }} property allows to access them.
 - When a {{ HTMLElement("textarea") }} element receives focus, the text insertion point is now placed, by default, at the beginning of the text rather than at the end. This makes Firefox's behavior consistent with other browsers.
 
 ### CSS
@@ -63,7 +63,7 @@ Firefox 6, based on Gecko 6.0, was released on August 16, 2011. This article pro
 - The {{ domxref("document.height") }} and {{ domxref("document.width") }} have been removed. {{ Bug(585877) }}
 - The {{ domxref("DocumentType") }} object's `entities` and `notations` properties, which were never implemented and always returned `null`, have been removed, since they've been removed from the specification anyway.
 - The `DOMConfiguration` interface and the `document.domConfig` property that used it have both been removed; they were never supported and have since been removed from the DOM specification.
-- The `hashchange` event now correctly includes [the `newURL` and `oldURL` fields](/en-US/docs/Web/API/WindowEventHandlers/onhashchange#the_hashchange_event).
+- The `hashchange` event now correctly includes [the `newURL` and `oldURL` fields](/en-US/docs/Web/API/Window/hashchange_event).
 - The {{ domxref("FileReader") }} interface's `abort()` method now throws an exception when used if no file read is in progress.
 - The {{ domxref("window.postMessage()") }} method now uses [the structured clone algorithm](/en-US/docs/Web/API/Web_Workers_API/Structured_clone_algorithm) to let you pass JavaScript objects instead of just strings from one window to another.
 - The {{ domxref("window.history") }} API now uses [the structured clone algorithm](/en-US/docs/Web/API/Web_Workers_API/Structured_clone_algorithm) to serialize the objects you pass to the `pushState()` and `replaceState()` methods; this lets you use more complex objects (including those that contain cyclic graphs of references).
@@ -74,7 +74,7 @@ Firefox 6, based on Gecko 6.0, was released on August 16, 2011. This article pro
 - DOM views, which we never documented, have been removed. This was a bit of implementation detail that was unnecessarily complicating things, so we got rid of it. If you notice this change, you're probably doing something wrong.
 - The `EventTarget` function [`addEventListener()`](/en-US/docs/XPCOM_Interface_Reference/nsIDOMEventTarget)'s `useCapture` parameter is now optional, as it is in WebKit (and as per the latest version of the specification).
 - The `mozResponseArrayBuffer` property of the [`XMLHttpRequest`](/en-US/docs/Web/API/XMLHttpRequest) object has been replaced with the `responseType` and `response` properties.
-- The {{ domxref("element.dataset") }} property has been added to the [`HTMLElement`](/en-US/docs/Web/API/HTMLElement) interface allowing access to the [`data-*` global attributes](/en-US/docs/Web/HTML/Global_attributes#attr-data-*) of an element.
+- The {{ domxref("element.dataset") }} property has been added to the [`HTMLElement`](/en-US/docs/Web/API/HTMLElement) interface allowing access to the [`data-*` global attributes](/en-US/docs/Web/HTML/Global_attributes#data-) of an element.
 - The {{ domxref("CustomEvent") }} interface has been implemented. (see {{ bug("427537") }})
 - For security reasons, `data:` and `javascript:` URIs no longer inherit the security context of the current page when the user enters them in the location bar; instead, a new, empty, security context is created. This means that script loaded by entering `javascript:` URIs in the location bar no longer has access to DOM methods and the like, for example. These URIs continue to work as before when used by script, however.
 
@@ -111,7 +111,7 @@ Firefox 6, based on Gecko 6.0, was released on August 16, 2011. This article pro
 ### Other changes
 
 - Support for microsummaries has been removed; these were never widely used, were not very discoverable, and continuing to support them was making improvements to the Places (bookmark and history) architecture difficult.
-- WebGL now supports the [`OES_texture_float`](http://www.khronos.org/registry/gles/extensions/OES/OES_texture_float.txt) extension.
+- WebGL now supports the [`OES_texture_float`](https://www.khronos.org/registry/OpenGL/extensions/OES/OES_texture_float.txt) extension.
 - The new _Scratchpad_ tool provides a handy place to experiment with JavaScript code.
 - The `console.trace()` method has been added to the [Console API](/en-US/docs/Web/API/Console_API) (see {{ bug('585956') }}).
 
@@ -152,7 +152,7 @@ For an overview of the changes you may need to make in order to make your add-on
 
 #### New interfaces
 
-- {{ interface("mozIAsyncFavicons") }}
+- `mozIAsyncFavicons`
   - : A new service that lets you access the favicon service asynchronously.
 - `nsIEventSource`
   - : _Details forthcoming._

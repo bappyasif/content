@@ -277,7 +277,7 @@ Some value types accept numbers, without any unit added to them. An example of a
 
 There are many ways to specify color in CSS, some of which are more recently implemented than others. The same color values can be used everywhere in CSS, whether you are specifying text color, background color, or whatever else.
 
-The standard color system available in modern computers is 24 bit, which allows the display of about 16.7 million distinct colors via a combination of different red, green and blue channels with 256 different values per channel (256 x 256 x 256 = 16,777,216.) Let's have a look at some of the ways in which we can specify colors in CSS.
+The standard color system available in modern computers supports 24-bit colors, which allows the display of about 16.7 million distinct colors via a combination of different red, green and blue channels with 256 different values per channel (256 x 256 x 256 = 16,777,216.) Let's have a look at some of the ways in which we can specify colors in CSS.
 
 > **Note:** In this tutorial we will look at the common methods of specifying color that have good browser support; there are others but they don't have as good support and are less common.
 
@@ -323,7 +323,7 @@ In the example below, we have added a background image to the containing block o
 
 Slightly less well-supported than RGB is the HSL color model (not supported on old versions of IE), which was implemented after much interest from designers. Instead of red, green, and blue values, the `hsl()` function accepts hue, saturation, and lightness values, which are used to distinguish between the 16.7 million colors, but in a different way:
 
-- **Hue**: The base shade of the color. This takes a value between 0 and 360, representing the angles around a color wheel.
+- **Hue**: The base shade of the color. This takes a value between 0 and 360, representing the angles around a {{glossary("color wheel")}}.
 - **Saturation**: How saturated is the color? This takes a value from 0–100%, where 0 is no color (it will appear as a shade of grey), and 100% is full color saturation
 - **Lightness**: How light or bright is the color? This takes a value from 0–100%, where 0 is no light (it will appear completely black) and 100% is full light (it will appear completely white)
 
@@ -379,35 +379,38 @@ For example, below we are using `calc()` to make the box `20% + 100px` wide. The
 
 ## Test your skills!
 
-We have covered a lot in this article, but can you remember the most important information? You can find some further tests to verify that you've retained this information before you move on — see [Test your skills: Values and units](/en-US/docs/Learn/CSS/Building_blocks/Values_tasks).
+You've reached the end of this article, but can you remember the most important information? You can find some further tests to verify that you've retained this information before you move on — see [Test your skills: Values and Units](/en-US/docs/Learn/CSS/Building_blocks/Values_tasks).
 
 ## Summary
 
-This has been a quick run-through of the most common types of values and units you might encounter. You can have a look at all of the different types on the [CSS Values and units](/en-US/docs/Web/CSS/CSS_Values_and_Units) reference page; you will encounter many of these in use as you work through these lessons.
+This has been a quick run-through of the most common types of values and units you might encounter. You can have a look at all of the different types on the [CSS Values and units](/en-US/docs/Web/CSS/CSS_Values_and_Units) reference page — you will encounter many of these in use as you work through these lessons.
 
-The key thing to remember is that each property has a defined list of allowed value types, and each value type has a definition explaining what the values are. You can then look up the specifics here on MDN.
+The key thing to remember is that each property has a defined list of allowed value types, and each value type has a definition explaining what the values are. You can then look up the specifics here on MDN. For example, understanding that [`<image>`](/en-US/docs/Web/CSS/image) also allows you to create a color gradient is useful but perhaps non-obvious knowledge to have!
 
-For example, understanding that [`<image>`](/en-US/docs/Web/CSS/image) also allows you to create a color gradient is useful but perhaps non-obvious knowledge to have!
+In the next article, we'll take a look at how [items are sized](/en-US/docs/Learn/CSS/Building_blocks/Sizing_items_in_CSS) in CSS.
 
 {{PreviousMenuNext("Learn/CSS/Building_blocks/Overflowing_content", "Learn/CSS/Building_blocks/Sizing_items_in_CSS", "Learn/CSS/Building_blocks")}}
 
 ## In this module
 
-1. [Cascade and inheritance](/en-US/docs/Learn/CSS/Building_blocks/Cascade_and_inheritance)
-2. [CSS selectors](/en-US/docs/Learn/CSS/Building_blocks/Selectors)
+- [Cascade and inheritance](/en-US/docs/Learn/CSS/Building_blocks/Cascade_and_inheritance)
+- [CSS selectors](/en-US/docs/Learn/CSS/Building_blocks/Selectors)
 
-    - [Type, class, and ID selectors](/en-US/docs/Learn/CSS/Building_blocks/Selectors/Type_Class_and_ID_Selectors)
-    - [Attribute selectors](/en-US/docs/Learn/CSS/Building_blocks/Selectors/Attribute_selectors)
-    - [Pseudo-classes and pseudo-elements](/en-US/docs/Learn/CSS/Building_blocks/Selectors/Pseudo-classes_and_pseudo-elements)
-    - [Combinators](/en-US/docs/Learn/CSS/Building_blocks/Selectors/Combinators)
+  - [Type, class, and ID selectors](/en-US/docs/Learn/CSS/Building_blocks/Selectors/Type_Class_and_ID_Selectors)
+  - [Attribute selectors](/en-US/docs/Learn/CSS/Building_blocks/Selectors/Attribute_selectors)
+  - [Pseudo-classes and pseudo-elements](/en-US/docs/Learn/CSS/Building_blocks/Selectors/Pseudo-classes_and_pseudo-elements)
+  - [Combinators](/en-US/docs/Learn/CSS/Building_blocks/Selectors/Combinators)
 
-3. [The box model](/en-US/docs/Learn/CSS/Building_blocks/The_box_model)
-4. [Backgrounds and borders](/en-US/docs/Learn/CSS/Building_blocks/Backgrounds_and_borders)
-5. [Handling different text directions](/en-US/docs/Learn/CSS/Building_blocks/Handling_different_text_directions)
-6. [Overflowing content](/en-US/docs/Learn/CSS/Building_blocks/Overflowing_content)
-7. [Values and units](/en-US/docs/Learn/CSS/Building_blocks/Values_and_units)
-8. [Sizing items in CSS](/en-US/docs/Learn/CSS/Building_blocks/Sizing_items_in_CSS)
-9. [Images, media, and form elements](/en-US/docs/Learn/CSS/Building_blocks/Images_media_form_elements)
-10. [Styling tables](/en-US/docs/Learn/CSS/Building_blocks/Styling_tables)
-11. [Debugging CSS](/en-US/docs/Learn/CSS/Building_blocks/Debugging_CSS)
-12. [Organizing your CSS](/en-US/docs/Learn/CSS/Building_blocks/Organizing)
+- [The box model](/en-US/docs/Learn/CSS/Building_blocks/The_box_model)
+- [Backgrounds and borders](/en-US/docs/Learn/CSS/Building_blocks/Backgrounds_and_borders)
+- [Handling different text directions](/en-US/docs/Learn/CSS/Building_blocks/Handling_different_text_directions)
+- [Overflowing content](/en-US/docs/Learn/CSS/Building_blocks/Overflowing_content)
+- [Values and units](/en-US/docs/Learn/CSS/Building_blocks/Values_and_units)
+- [Sizing items in CSS](/en-US/docs/Learn/CSS/Building_blocks/Sizing_items_in_CSS)
+- [Images, media, and form elements](/en-US/docs/Learn/CSS/Building_blocks/Images_media_form_elements)
+- [Styling tables](/en-US/docs/Learn/CSS/Building_blocks/Styling_tables)
+- [Debugging CSS](/en-US/docs/Learn/CSS/Building_blocks/Debugging_CSS)
+- [Organizing your CSS](/en-US/docs/Learn/CSS/Building_blocks/Organizing)
+- [Fundamental CSS comprehension](/en-US/docs/Learn/CSS/Building_blocks/Fundamental_CSS_comprehension)
+- [Creating fancy letterheaded paper](/en-US/docs/Learn/CSS/Building_blocks/Creating_fancy_letterheaded_paper)
+- [A cool-looking box](/en-US/docs/Learn/CSS/Building_blocks/A_cool_looking_box)

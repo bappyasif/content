@@ -21,25 +21,25 @@ until {{domxref("console.groupEnd()")}} is called.
 ## Syntax
 
 ```js
-group();
-group(label);
+group()
+group(label)
 ```
 
 ### Parameters
 
-- `label`
-  - : Label for the group. Optional. (Chrome 59 tested) Does not work with
-    `console.groupEnd()`.
+- `label` {{optional_inline}}
+  - : Label for the group.
 
-{{h3_gecko_minversion("Using groups in the console", "9.0")}}
+### Return value
+
+None ({{jsxref("undefined")}}).
+
+## Examples
 
 You can use nested groups to help organize your output by visually associating related
 messages. To create a new nested block, call `console.group()`. The
 `console.groupCollapsed()` method is similar, but the new block is
 collapsed and requires clicking a disclosure button to read it.
-
-> **Note:** From Gecko 9 until Gecko 51, the `groupCollapsed()` method was the same as `group()`.
-> Collapsed groups are fully supported starting in Gecko 52. See {{bug("1088360")}}.
 
 To exit the current group, call `console.groupEnd()`.
 For example, given this code:
@@ -61,8 +61,7 @@ The output looks like this:
 
 ![A screenshot of messages nested in the console output.](nesting.png)
 
-See [Using groups in
-the console](/en-US/docs/Web/API/console#using_groups_in_the_console) in the documentation of {{domxref("console")}} for more details.
+See [Using groups in the console](/en-US/docs/Web/API/console#using_groups_in_the_console) in the documentation of {{domxref("console")}} for more details.
 
 ## Specifications
 
@@ -71,3 +70,7 @@ the console](/en-US/docs/Web/API/console#using_groups_in_the_console) in the doc
 ## Browser compatibility
 
 {{Compat}}
+
+## See also
+
+- {{domxref("console.groupEnd()")}}

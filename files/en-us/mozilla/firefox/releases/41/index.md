@@ -59,7 +59,7 @@ Highlights:
 - {{jsxref("Functions/Default_parameters", "Destructured parameters with default value assignment", "#Destructured_parameter_with_default_value_assignment", 1)}} are now supported ({{bug(1018628)}}).
 - Per ES2015, curly braces are required for [method definitions](/en-US/docs/Web/JavaScript/Reference/Functions/Method_definitions). Syntax without them will fail from now on ({{bug(1150855)}}).
 - [Method definitions](/en-US/docs/Web/JavaScript/Reference/Functions/Method_definitions) (except for generator methods) are not constructable anymore ({{bug(1059908)}} and {{bug(1166950)}}).
-- As part of ES2015 specification compliance, parenthesized [destructuring](/en-US/docs/Web/JavaScript/Reference/Operators/Destructuring_assignment) patterns, like `([a, b]) = [1, 2]` or `({a, b}) = { a: 1, b: 2 }`, are now considered invalid and will throw a {{jsxref("SyntaxError")}}. See [Jeff Walden's blog post](http://whereswalden.com/2015/06/20/new-changes-to-make-spidermonkeys-and-firefoxs-parsing-of-destructuring-patterns-more-spec-compliant/) for more details.
+- As part of ES2015 specification compliance, parenthesized [destructuring](/en-US/docs/Web/JavaScript/Reference/Operators/Destructuring_assignment) patterns, like `([a, b]) = [1, 2]` or `({a, b}) = { a: 1, b: 2 }`, are now considered invalid and will throw a {{jsxref("SyntaxError")}}. See [Jeff Walden's blog post](https://whereswalden.com/2015/06/20/new-changes-to-make-spidermonkeys-and-firefoxs-parsing-of-destructuring-patterns-more-spec-compliant/) for more details.
 - The [`new.target`](/en-US/docs/Web/JavaScript/Reference/Operators/new.target) syntax has been added ({{bug(1141865)}}).
 
 ### Interfaces/APIs/DOM
@@ -109,7 +109,7 @@ Highlights:
 
 #### Miscellaneous
 
-- On OS X and Windows, {{domxref("NavigatorOnLine.onLine", "Navigator.onLine")}} now changes regarding network connectivity (it always returned `true`, , unless "Work offline" mode was selected) before ({{bug(654579)}}).
+- On OS X and Windows, {{domxref("NavigatorOnLine.onLine", "Navigator.onLine")}} now changes regarding network connectivity (it always returned `true`, unless "Work offline" mode was selected) before ({{bug(654579)}}).
 - {{domxref("MessagePort")}} and {{domxref("MessageChannel")}} now available in [Web workers](/en-US/docs/Web/API/Web_Workers_API), and are enabled by default in all contexts ({{bug(952139)}}) and ({{bug(911972)}}).
 - The User Timing API is now available in [Web workers](/en-US/docs/Web/API/Web_Workers_API) ({{bug(1155761)}}).
 - The [Notifications API](/en-US/docs/Web/API/Notifications_API) is now available in [Web workers](/en-US/docs/Web/API/Web_Workers_API) ({{bug(916893)}}).

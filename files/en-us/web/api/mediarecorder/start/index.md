@@ -52,7 +52,8 @@ data gathering stops. A final {{domxref("MediaRecorder.dataavailable_event", "da
 ## Syntax
 
 ```js
-mediaRecorder.start(timeslice)
+start()
+start(timeslice)
 ```
 
 ### Parameters
@@ -94,7 +95,7 @@ handler to respond to these errors.
 - `UnknownError` {{domxref("DOMException")}}
   - : Thrown if something else went wrong during the recording process.
 
-## Example
+## Examples
 
 ```js
 ...
@@ -120,5 +121,5 @@ handler to respond to these errors.
 - [Using the MediaRecorder API](/en-US/docs/Web/API/MediaStream_Recording_API/Using_the_MediaStream_Recording_API)
 - [Web Dictaphone](https://mdn.github.io/web-dictaphone/): MediaRecorder +
   getUserMedia + Web Audio API visualization demo, by [Chris Mills](https://twitter.com/chrisdavidmills) ([source on GitHub](https://github.com/mdn/web-dictaphone/).)
-- [simpl.info MediaStream Recording demo](http://simpl.info/mediarecorder/), by [Sam Dutton](https://twitter.com/sw12).
+- [simpl.info MediaStream Recording demo](https://simpl.info/mediarecorder/), by [Sam Dutton](https://twitter.com/sw12).
 - {{domxref("MediaDevices.getUserMedia", "getUserMedia()")}}

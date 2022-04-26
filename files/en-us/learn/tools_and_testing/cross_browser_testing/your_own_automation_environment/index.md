@@ -86,7 +86,7 @@ To set your `PATH` variable on a macOS system and on most Linux systems:
     exec bash
     ```
 
-2. Open your `.bash_profile` (or `.bashrc`) file (if you can't see hidden files, you'll need to display them, see [Show/Hide hidden files in Mac OS X](https://ianlunn.co.uk/articles/quickly-showhide-hidden-files-mac-os-x-mavericks/) or [Show hidden folders in Ubuntu](https://askubuntu.com/questions/470837/how-to-show-hidden-folders-in-ubuntu-14-04)).
+2. Open your `.bash_profile` (or `.bashrc`) file (if you can't see hidden files, you'll need to display them, see [Show/Hide hidden files in macOS](https://ianlunn.co.uk/articles/quickly-showhide-hidden-files-mac-os-x-mavericks/) or [Show hidden folders in Ubuntu](https://askubuntu.com/questions/470837/how-to-show-hidden-folders-in-ubuntu-14-04)).
 3. Paste the following into the bottom of your file (updating the path as it actually is on your machine):
 
     ```bash
@@ -104,7 +104,7 @@ To set your `PATH` variable on a macOS system and on most Linux systems:
 
 6. You should see it printed out in the terminal.
 
-To set your `PATH` variable on Windows, follow the instructions at [How can I add a new folder to my system path?](http://windowsitpro.com/systems-management/how-can-i-add-new-folder-my-system-path)
+To set your `PATH` variable on Windows, follow the instructions at [How can I add a new folder to my system path?](https://www.itprotoday.com/)
 
 OK, let's try a quick test to make sure everything is working.
 
@@ -154,7 +154,7 @@ You should see an instance of Firefox automatically open up! Google should autom
 
 There is also nothing to stop you running the test on multiple browsers simultaneously. Let's try this!
 
-1. Create another new file inside your project directory called `google_test_multiple.js`. You can feel free to change the references to some of the other browsers we added, remove them, etc., depending on what browsers you have available to test on your operating system. You'll need to make sure you have the right browser drivers set up on your system. In terms of what string to use inside the `.forBrowser()` method for other browsers, see the [Browser enum](https://seleniumhq.github.io/selenium/docs/api/javascript/module/selenium-webdriver/index_exports_Browser.html) reference page.
+1. Create another new file inside your project directory called `google_test_multiple.js`. You can feel free to change the references to some of the other browsers we added, remove them, etc., depending on what browsers you have available to test on your operating system. You'll need to make sure you have the right browser drivers set up on your system. In terms of what string to use inside the `.forBrowser()` method for other browsers, see the [Browser enum](https://www.selenium.dev/selenium/docs/api/javascript/module/selenium-webdriver/index_exports_Browser.html) reference page.
 2. Give it the following contents, then save it:
 
     ```js
@@ -211,7 +211,7 @@ Fun huh? Let's move on, look at the basics of WebDriver syntax, in a bit more de
 
 ## WebDriver syntax crash course
 
-Let's have a look at a few key features of the webdriver syntax. For more complete details, you should consult the [selenium-webdriver JavaScript API reference](https://seleniumhq.github.io/selenium/docs/api/javascript/module/selenium-webdriver/) for a detailed reference, and the Selenium main documentation's [Selenium WebDriver](https://www.seleniumhq.org/docs/03_webdriver.jsp) and [WebDriver: Advanced Usage](https://www.seleniumhq.org/docs/04_webdriver_advanced.jsp) pages, which contain multiple examples to learn from written in different languages.
+Let's have a look at a few key features of the webdriver syntax. For more complete details, you should consult the [selenium-webdriver JavaScript API reference](https://www.selenium.dev/selenium/docs/api/javascript/module/selenium-webdriver/) for a detailed reference, and the Selenium main documentation's [Selenium WebDriver](https://www.seleniumhq.org/docs/03_webdriver.jsp) and [WebDriver: Advanced Usage](https://www.seleniumhq.org/docs/04_webdriver_advanced.jsp) pages, which contain multiple examples to learn from written in different languages.
 
 ### Starting a new test
 
@@ -223,7 +223,7 @@ const webdriver = require('selenium-webdriver'),
     until = webdriver.until;
 ```
 
-Next, you need to create a new instance of a driver, using the `new webdriver.Builder()` constructor. This needs to have the `forBrowser()` method chained onto it to specify what browser you want to test with this builder, and the `build()` method to actually build it (see the [Builder class reference](https://seleniumhq.github.io/selenium/docs/api/javascript/module/selenium-webdriver/index_exports_Builder.html) for detailed information on these features).
+Next, you need to create a new instance of a driver, using the `new webdriver.Builder()` constructor. This needs to have the `forBrowser()` method chained onto it to specify what browser you want to test with this builder, and the `build()` method to actually build it (see the [Builder class reference](https://www.selenium.dev/selenium/docs/api/javascript/module/selenium-webdriver/index_exports_Builder.html) for detailed information on these features).
 
 ```js
 let driver = new webdriver.Builder()
@@ -265,7 +265,7 @@ To load the page you actually want to test, you use the `get()` method of the dr
 driver.get('http://www.google.com');
 ```
 
-> **Note:** See the [WebDriver class reference](https://seleniumhq.github.io/selenium/docs/api/javascript/module/selenium-webdriver/lib/webdriver_exports_WebDriver.html) for details of the features in this section and the ones below it.
+> **Note:** See the [WebDriver class reference](https://www.selenium.dev/selenium/docs/api/javascript/module/selenium-webdriver/lib/webdriver_exports_WebDriver.html) for details of the features in this section and the ones below it.
 
 You can use any URL to point to your resource, including a `file://` URL to test a local document:
 
@@ -395,7 +395,7 @@ driver.sleep(2000).then(function() {
 
 WebDriver will now wait for 2 seconds before filling in the form field. We then test whether its value got filled in (i.e. is not empty) by using `getAttribute()` to retrieve it's `value` attribute value, and print a message to the console if it is not empty.
 
-> **Note:** There is also a method called [`wait()`](https://seleniumhq.github.io/selenium/docs/api/javascript/module/selenium-webdriver/lib/webdriver_exports_WebDriver.html#wait), which repeatedly tests a condition for a certain length of time, and then carries on executing the code. This also makes use of the [util library](https://seleniumhq.github.io/selenium/docs/api/javascript/module/selenium-webdriver/lib/until.html), which defines common conditions to use along with `wait()`.
+> **Note:** There is also a method called [`wait()`](https://www.selenium.dev/selenium/docs/api/javascript/module/selenium-webdriver/lib/webdriver_exports_WebDriver.html#wait), which repeatedly tests a condition for a certain length of time, and then carries on executing the code. This also makes use of the [util library](https://www.selenium.dev/selenium/docs/api/javascript/module/selenium-webdriver/lib/until.html), which defines common conditions to use along with `wait()`.
 
 ### Shutting down drivers after use
 
@@ -415,7 +415,7 @@ There has been a lot written about best practices for writing tests. You can fin
 2. Write atomic tests: Each test should test one thing only, making it easy to keep track of what test file is testing which criterion. As an example, the `google_test.js` test we looked at above is pretty good, as it just tests a single thing — whether the title of a search results page is set correctly. We could work on giving it a better name so it is easier to work out what it does if we add more google tests. Perhaps `results_page_title_set_correctly.js` would be slightly better?
 3. Write autonomous tests: Each test should work on it's own, and not depend on other tests to work.
 
-In addition, we should mention test results/reporting — we've been reporting results in our above examples using simple `console.log()` statements, but this is all done in JavaScript, so you can use whatever test running and reporting system you want, be it [Mocha](https://mochajs.org/), [Chai](http://chaijs.com/), or some other tool.
+In addition, we should mention test results/reporting — we've been reporting results in our above examples using simple `console.log()` statements, but this is all done in JavaScript, so you can use whatever test running and reporting system you want, be it [Mocha](https://mochajs.org/), [Chai](https://www.chaijs.com/), or some other tool.
 
 1. For example, try making a local copy of our [`mocha_test.js`](https://github.com/mdn/learning-area/blob/main/tools-testing/cross-browser-testing/selenium/mocha_test.js) example inside your project directory. Put it inside a subfolder called `test`. This example uses a long chain of promises to run all the steps required in our test — the promise-based methods WebDriver uses need to resolve for it to work properly.
 2. Install the mocha test harness by running the following command inside your project directory:

@@ -33,7 +33,7 @@ automatically to pages when they are in the active tab.
 ## Syntax
 
 ```js
-write(data);
+write(data)
 ```
 
 ### Parameters
@@ -111,4 +111,4 @@ function copyCanvasContentsToClipboard(canvas, onDone, onError) {
 - [Async Clipboard API demo on
   Glitch](https://async-clipboard-api.glitch.me/)
 - [Image support for Async
-  Clipboard article](https://web.dev/image-support-for-async-clipboard/)
+  Clipboard article](https://web.dev/async-clipboard/)

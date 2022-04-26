@@ -13,7 +13,7 @@ tags:
 ---
 {{FirefoxSidebar}}
 
-[Firefox 3.6](https://www.firefox.com/) offers support for new and developing web standards, increased performance, and an overall better experience for web users and developers. This page provides links to articles covering the new capabilities of Firefox 3.6.
+[Firefox 3.6](https://www.mozilla.org/firefox/) offers support for new and developing web standards, increased performance, and an overall better experience for web users and developers. This page provides links to articles covering the new capabilities of Firefox 3.6.
 
 ## For web site and application developers
 
@@ -80,7 +80,7 @@ Gecko 1.9.2 introduces JavaScript 1.8.2, which adds a number of language feature
 - The `getBoxObjectFor()` method has been **removed**, as it was non-standard and exposed even more non-standard stuff to the web. See {{bug(340571)}}. Also affects [MooTools](https://mootools.net/) which uses this call for Gecko detection; this has been fixed in the latest version of MooTools, so be sure to update.
 - The new [`mozInnerScreenX`](/en-US/docs/Web/API/Window/mozInnerScreenX) and [`mozInnerScreenY`](/en-US/docs/Web/API/Window/mozInnerScreenY) properties on DOM windows have been added; these return the screen coordinates of the top-left corner of the window's viewport.
 - The new `mozScreenPixelsPerCSSPixel` attribute on the `nsIDOMWindowUtils` interface, accessible only to chrome, provides a conversion factor between CSS pixels and screen pixels; this value can vary based on the zoom level of the content.
-- When the page's URI's document fragment identifier (the part after the "#" (hash) character) changes, a new `hashchange` event is sent to the page. See [window.onhashchange](/en-US/docs/Web/API/WindowEventHandlers/onhashchange) for more information. {{bug(385434)}}
+- When the page's URI's document fragment identifier (the part after the "#" (hash) character) changes, a new `hashchange` event is sent to the page. See the [`hashchange`](/en-US/docs/Web/API/Window/hashchange_event) event for more information. {{bug(385434)}}
 - The attribute [`document.readyState`](/en-US/docs/Web/API/Document/readyState) is now supported. {{bug(347174)}}
 - Support for HTML5's [`element.classList`](/en-US/docs/Web/API/Element/classList) to allow easier handling of the class attribute. {{bug(501257)}}
 - `localName` and `namespaceURI` in HTML documents now behave like they do in XHTML documents: `localName` returns in lower case and `namespaceURI` for HTML elements is `"http://www.w3.org/1999/xhtml"`.
@@ -146,7 +146,7 @@ See [Updating themes for Firefox 3.6](/en-US/docs/Mozilla/Firefox/Releases/3.6/U
 - The `nsILocalFileMac` interface has had two methods removed: `setFileTypeAndCreatorFromMIMEType()` and `setFileTypeAndCreatorFromExtension()`.
 - The new [`NetUtils.jsm`](/en-US/docs/JavaScript_code_modules/NetUtil.jsm) code module provides an easy-to-use method for asynchronously copying data from an input stream to an output stream.
 - The new [`openLocationLastURL.jsm`](/en-US/docs/JavaScript_code_modules/openLocationLastURL.jsm) code module makes it easy to read and change the value of the "Open Location" dialog box's remembered URL while properly taking private browsing mode into account.
-- On Windows, the `nsIScreen` interface now reports 24 bit per pixel color depths when the graphics driver claims 32 bits, since 24 more accurately represents the actual number of color pixels in use.
+- On Windows, the `nsIScreen` interface now reports 24-bit per pixel color depths when the graphics driver claims 32 bits, since 24 more accurately represents the actual number of color pixels in use.
 - Menu bars can now be hidden on Windows, using the new [`autohide`](/en-US/docs/Mozilla/Tech/XUL/Attribute/autohide) attribute on the [`<xul:toolbar>`](/en-US/docs/Mozilla/Tech/XUL/toolbar) XUL element.
 - The [`loadOneTab`](/en-US/docs/Mozilla/Tech/XUL/Method/loadOneTab) and [`addTab`](/en-US/docs/Mozilla/Tech/XUL/Method/addTab) methods now accept a new `relatedToCurrent` parameter and, in addition, allow the parameters to be specified by name, since nearly all of the parameters are optional.
 - The "[hidden](/en-US/docs/Install_Manifests#hidden)" property is no longer supported in install manifests; it's no longer possible to prevent the user from seeing add-ons in the add-on manager window.

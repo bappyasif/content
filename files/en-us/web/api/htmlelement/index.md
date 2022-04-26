@@ -18,7 +18,7 @@ The **`HTMLElement`** interface represents any [HTML](/en-US/docs/Web/HTML) elem
 
 ## Properties
 
-_Inherits properties from its parent, {{DOMxRef("Element")}}, and implements those from {{DOMxRef("DocumentAndElementEventHandlers")}}, {{DOMxRef("GlobalEventHandlers")}}, and {{DOMxRef("TouchEventHandlers")}}._
+_Inherits properties from its parent, {{DOMxRef("Element")}}, and implements those from {{DOMxRef("GlobalEventHandlers")}}._
 
 - {{DOMxRef("HTMLElement.accessKey")}}
   - : A string representing the access key assigned to the element.
@@ -95,7 +95,7 @@ _Inherits properties from its parent, {{DOMxRef("Element")}}, and implements tho
 
 ### Event handlers
 
-Most event handler properties, of the form `onXYZ`, are defined on the {{DOMxRef("DocumentAndElementEventHandlers")}}, {{DOMxRef("GlobalEventHandlers")}} or {{DOMxRef("TouchEventHandlers")}} interfaces and implemented by `HTMLElement`. In addition, the following handlers are specific to `HTMLElement`.
+Most event handler properties, of the form `onXYZ`, are defined on the {{DOMxRef("GlobalEventHandlers")}} interface and implemented by `HTMLElement`. In addition, the following handlers are specific to `HTMLElement`.
 
 - {{DOMxRef("TouchEventHandlers.ontouchstart")}} {{Non-standard_Inline}}
   - : Returns the event handling code for the {{domxref("Element/touchstart_event", "touchstart")}} event.
@@ -103,16 +103,12 @@ Most event handler properties, of the form `onXYZ`, are defined on the {{DOMxRef
   - : Returns the event handling code for the {{domxref("Element/touchend_event", "touchend")}} event.
 - {{DOMxRef("TouchEventHandlers.ontouchmove")}} {{Non-standard_Inline}}
   - : Returns the event handling code for the {{domxref("Element/touchmove_event", "touchmove")}} event.
-- {{DOMxRef("TouchEventHandlers.ontouchenter")}} {{Non-standard_Inline}}
-  - : Returns the event handling code for the {{event("touchenter")}} event.
-- {{DOMxRef("TouchEventHandlers.ontouchleave")}} {{Non-standard_Inline}}
-  - : Returns the event handling code for the {{event("touchleave")}} event.
 - {{DOMxRef("TouchEventHandlers.ontouchcancel")}} {{Non-standard_Inline}}
   - : Returns the event handling code for the {{domxref("Element/touchcancel_event", "touchcancel")}} event.
 
 ## Methods
 
-_Inherits methods from its parent, {{DOMxRef("Element")}}, and implements those from {{DOMxRef("DocumentAndElementEventHandlers")}}, {{DOMxRef("GlobalEventHandlers")}}, and {{DOMxRef("TouchEventHandlers")}}._
+_Inherits methods from its parent, {{DOMxRef("Element")}}, and implements those from {{DOMxRef("GlobalEventHandlers")}}._
 
 - {{DOMxRef("HTMLElement.attachInternals()")}} {{Experimental_Inline}}
   - : Returns an {{DOMxRef("ElementInternals")}} object, and enables a custom element to participate in HTML forms.

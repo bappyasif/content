@@ -22,8 +22,12 @@ The `MediaKeySystemAccess.createMediaKeys()` method returns a
 ## Syntax
 
 ```js
-var mediaKeys = await mediaKeySystemAccess.createMediaKeys();
+createMediaKeys()
 ```
+
+### Return value
+
+A {{jsxref('Promise')}}.
 
 ## Specifications
 

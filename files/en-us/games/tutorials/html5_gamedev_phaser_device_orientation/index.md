@@ -21,7 +21,7 @@ By the end of the tutorial you will have a fully functional demo game: [Cyber Or
 
 ## Phaser framework
 
-[Phaser](https://phaser.io/) is a framework for building desktop and mobile HTML5 games. It's quite new, but growing rapidly thanks to the passionate community involved in the development process. You can check it out [on GitHub](https://github.com/photonstorm/phaser) where it's open sourced, read the [online documentation](https://phaser.io/docs/) and go through the big collection of [examples](https://examples.phaser.io/). The Phaser framework provides you with a set of tools that will speed up development and help handle generic tasks needed to complete the game, so you can focus on the game idea itself.
+[Phaser](https://phaser.io/) is a framework for building desktop and mobile HTML5 games. It's quite new, but growing rapidly thanks to the passionate community involved in the development process. You can check it out [on GitHub](https://github.com/photonstorm/phaser) where it's open sourced, read the [online documentation](https://phaser.io/docs/) and go through the big collection of [examples](https://phaser.io/examples). The Phaser framework provides you with a set of tools that will speed up development and help handle generic tasks needed to complete the game, so you can focus on the game idea itself.
 
 ## Starting with the project
 
@@ -226,7 +226,7 @@ The `create` and `update` functions are framework-specific, while others will be
 
 - `initLevels` initializes the level data.
 - `showLevel` prints the level data on the screen.
-- `updateCounter` updates the time spent playing each level and records the total time spent playing the game..
+- `updateCounter` updates the time spent playing each level and records the total time spent playing the game.
 - `managePause` pauses and resumes the game.
 - `manageAudio` turns the audio on and off.
 - `wallCollision` is executed when the ball hits the walls or other objects.

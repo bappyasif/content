@@ -19,10 +19,10 @@ The **`open()`** method of the {{domxref('Window')}} interface loads a specified
 ## Syntax
 
 ```js
-open();
-open(url);
-open(url, target);
-open(url, target, windowFeatures);
+open()
+open(url)
+open(url, target)
+open(url, target, windowFeatures)
 ```
 
 ### Parameters
@@ -310,7 +310,7 @@ function openRequestedSinglePopup(url) {
     window, the browser in the main window will verify that the secondary window has the
     same domain name.
 
-    More reading on the cross-domain script security restriction: [http://www.mozilla.org/projects/secu...me-origin.html](https://www.mozilla.org/projects/security/components/same-origin.html)
+    More reading on the cross-domain script security restriction: [http://www.mozilla.org/projects/secu...me-origin.html](https://developer.mozilla.org/en-US/docs/Web/Security/Same-origin_policy)
 
 ## Usability issues
 
@@ -350,7 +350,7 @@ recommendable usability and accessibility guidelines:
 
 - "javascript:" pseudo-links become dysfunctional when JavaScript support is disabled
   or inexistent. Several corporations allow their employees to surf on the web but under
-  strict security policies: no JavaScript enabled, no java, no activeX, no Flash. For
+  strict security policies: no JavaScript enabled, no Java, no ActiveX, no Flash. For
   various reasons (security, public access, text browsers, etc..), about 5% to 10% of
   users on the web surf with JavaScript disabled.
 - "javascript:" links will interfere with advanced features in tab-capable browsers:
@@ -508,7 +508,7 @@ authors:
   area for applications: e.g. user resizes the Windows taskbar, user positions the
   Windows taskbar on the left side (arabic language based) or right side (Hebrew
   language), user has a permanent MS-Office quick launch toolbar, etc.
-- some operating system (Mac OS X) forces presence of toolbars that can then fool the
+- some operating system (macOS) forces presence of toolbars that can then fool the
   web author's anticipations, calculations of the effective dimensions of the browser
   window
 

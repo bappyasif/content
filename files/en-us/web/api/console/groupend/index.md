@@ -21,12 +21,16 @@ console](/en-US/docs/Web/API/console#using_groups_in_the_console) in the {{domxr
 ## Syntax
 
 ```js
-groupEnd();
+groupEnd()
 ```
 
 ### Parameters
 
 None.
+
+### Return value
+
+None ({{jsxref("undefined")}}).
 
 ## Specifications
 
@@ -35,3 +39,7 @@ None.
 ## Browser compatibility
 
 {{Compat}}
+
+## See also
+
+- {{domxref("console.group()")}}

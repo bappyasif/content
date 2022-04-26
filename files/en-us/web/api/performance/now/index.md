@@ -38,10 +38,10 @@ are alleviated through other means.
 ## Syntax
 
 ```js
-t = performance.now();
+now()
 ```
 
-## Example
+## Examples
 
 ```js
 const t0 = performance.now();
@@ -113,4 +113,4 @@ of cross-origin attacks dubbed [XS-Leaks](https://github.com/xsleaks/xsleaks).
 
 ## See also
 
-- [When milliseconds are not enough: performance.now()](http://updates.html5rocks.com/2012/08/When-milliseconds-are-not-enough-performance-now) from HTML5 Rocks.
+- [When milliseconds are not enough: performance.now()](https://developer.chrome.com/blog/when-milliseconds-are-not-enough-performance-now/) from HTML5 Rocks.

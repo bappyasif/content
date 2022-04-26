@@ -108,11 +108,11 @@ It is important that websites adopt `<link>` tag based prefetching instead of tr
 
 ### Which browsers support link prefetching?
 
-Browsers based on Mozilla 1.2 (or later) as well as browsers based on Mozilla 1.0.2 (or later) support prefetching. This includes Firefox and Netscape 7.01+. Camino builds as of March 2003 are based on Mozilla 1.0.1, and therefore do not support prefetching. [Test](https://gemal.dk/browserspy/prefetch.php) your browser to see if it supports Link Prefetching.
+Browsers based on Mozilla 1.2 (or later), as well as browsers based on Mozilla 1.0.2 (or later), support prefetching. This includes Firefox and Netscape 7.01+. Camino builds as of March 2003 are based on Mozilla 1.0.1, and therefore do not support prefetching. [Test](https://browserspy.dk/prefetch.php) your browser to see if it supports Link Prefetching.
 
 ### Privacy implications
 
-Along with the referral and URL-following implications already mentioned above, prefetching will generally cause the cookies of the prefetched site to be accessed. (For example, if you google amazon, the Google results page will prefetch `www.amazon.com`, causing amazon cookies to be sent back and forth. You can block 3rd party cookies in Firefox, see [Disabling third party cookies](https://support.mozilla.com/en-US/kb/Disabling%20third%20party%20cookies).)
+Along with the referral and URL-following implications already mentioned above, prefetching will generally cause the cookies of the prefetched site to be accessed. (For example, if you google amazon, the Google results page will prefetch `www.amazon.com`, causing amazon cookies to be sent back and forth. You can block 3rd party cookies in Firefox, see [Disabling third party cookies](https://support.mozilla.org/en-US/kb/third-party-cookies-firefox-tracking-protection).)
 
 ### What about...?
 

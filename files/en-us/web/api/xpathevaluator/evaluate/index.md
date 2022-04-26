@@ -20,13 +20,16 @@ executes an XPath expression on the given node or document and returns an
 ## Syntax
 
 ```js
-XPathResult XPathEvaluator.evaluate(expression, contextNode, resolver, type, result);
+evaluate(expression, contextNode)
+evaluate(expression, contextNode, resolver)
+evaluate(expression, contextNode, resolver, type)
+evaluate(expression, contextNode, resolver, type, result)
 ```
 
 ### Parameters
 
 - expression
-  - : A {{domxref("DOMString")}} representing the XPath expression to be parsed and
+  - : A string representing the XPath expression to be parsed and
     evaluated.
 - contextNode
   - : A {{domxref("Node")}} representing the context to use for evaluating the expression.

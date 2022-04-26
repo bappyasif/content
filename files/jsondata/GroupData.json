@@ -632,7 +632,6 @@
         "HTMLOptionsCollection",
         "HTMLOutputElement",
         "HTMLParagraphElement",
-        "HTMLParamElement",
         "HTMLPictureElement",
         "HTMLPreElement",
         "HTMLProgressElement",
@@ -672,8 +671,7 @@
         "PromiseRejectionEvent",
         "RadioNodeList",
         "ValidityState",
-        "Window",
-        "WindowEventHandlers"
+        "Window"
       ],
       "methods": [],
       "properties": [],

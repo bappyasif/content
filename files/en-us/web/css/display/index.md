@@ -21,7 +21,7 @@ Formally, the **`display`** property sets an element's inner and outer _display 
 The CSS `display` property is specified using keyword values.
 
 ```css
-/* legacy values */
+/* precomposed values */
 display: block;
 display: inline;
 display: inline-block;
@@ -160,10 +160,10 @@ This can be used together with {{CSSxRef("list-style-type")}} and {{CSSxRef("lis
       - : Turns off the display of an element so that it has no effect on layout (the document is rendered as though the element did not exist). All descendant elements also have their display turned off.
         To have an element take up the space that it would normally take, but without actually rendering anything, use the {{CSSxRef("visibility")}} property instead.
 
-### Legacy
+### Precomposed
 
 - {{CSSxRef("&lt;display-legacy&gt;")}}
-  - : CSS 2 used a single-keyword syntax for the `display` property, requiring separate keywords for block-level and inline-level variants of the same layout mode.
+  - : CSS 2 used a single-keyword, precomposed syntax for the `display` property, requiring separate keywords for block-level and inline-level variants of the same layout mode.
 
     - `inline-block`
 
@@ -193,7 +193,7 @@ This can be used together with {{CSSxRef("list-style-type")}} and {{CSSxRef("lis
 
 The Level 3 specification details two values for the `display` property — enabling the specification of the outer and inner display type explicitly — but this is not yet well-supported by browsers.
 
-The `<display-legacy>` methods allow the same results with single keyword values, and should be favoured by developers until the two keyword values are better supported. For example, using two values you might specify an inline flex container as follows:
+The precomposed `<display-legacy>` methods allow the same results with single keyword values, and should be favoured by developers until the two keyword values are better supported. For example, using two values you might specify an inline flex container as follows:
 
 ```css
 .container {
@@ -273,7 +273,7 @@ If you want to visually hide the element, a more accessible alternative is to us
 Current implementations in most browsers will remove from the [accessibility tree](/en-US/docs/Learn/Accessibility/What_is_accessibility#accessibility_apis) any element with a `display` value of `contents` (but descendants will remain). This will cause the element itself to no longer be announced by screen reading technology. This is incorrect behavior according to the [CSS specification](https://drafts.csswg.org/css-display/#valdef-display-contents).
 
 - [More accessible markup with display: contents | Hidde de Vries](https://hiddedevries.nl/en/blog/2018-04-21-more-accessible-markup-with-display-contents)
-- [Display: Contents Is Not a CSS Reset | Adrian Roselli](http://adrianroselli.com/2018/05/display-contents-is-not-a-css-reset.html)
+- [Display: Contents Is Not a CSS Reset | Adrian Roselli](https://adrianroselli.com/2018/05/display-contents-is-not-a-css-reset.html)
 
 ### Tables
 

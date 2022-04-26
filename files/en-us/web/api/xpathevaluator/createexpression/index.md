@@ -19,13 +19,14 @@ This method compiles an {{domxref("XPathExpression")}} which can then be used fo
 ## Syntax
 
 ```js
-XPathExpression XPathEvaluator.createExpression(expression, resolver);
+createExpression(expression)
+createExpression(expression, resolver)
 ```
 
 ### Parameters
 
 - expression
-  - : A {{domxref("DOMString")}} representing the XPath expression to be created.
+  - : A string representing the XPath expression to be created.
 - resolver {{optional_inline}}
   - : Permits translation of all prefixes, including the `xml` namespace
     prefix, within the XPath expression into appropriate namespace URIs.

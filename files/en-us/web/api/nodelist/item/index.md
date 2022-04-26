@@ -19,14 +19,16 @@ argument is provided.
 ## Syntax
 
 ```js
-nodeItem = nodeList.item(index)
+item(index)
 ```
 
-- `nodeList` is a `NodeList`. This is usually obtained from
-  another DOM property or method, such as [childNodes](/en-US/docs/Web/API/Node/childNodes).
+### Parameters
+
 - `index` is the index of the node to be fetched. The index is zero-based.
-- `nodeItem` is the `index`th node in the `nodeList`
-  returned by the `item` method.
+
+### Return value
+
+The `index`th node in the `nodeList` returned by the `item` method.
 
 ## Alternate Syntax
 
@@ -37,7 +39,7 @@ NodeList by index:
 nodeItem = nodeList[index]
 ```
 
-## Example
+## Examples
 
 ```js
 var tables = document.getElementsByTagName("table");

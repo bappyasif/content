@@ -109,7 +109,7 @@ While text that is too small is hard to read, so is text that is too big. Above 
 
 The current WCAG 2.x contrast guidelines 1.4.3 and 1.4.6 define "large" text as text that is 18pt (24px) or larger at a normal weight (400), or text that is 14pt (18.7px) at a bold weight (700). This may have been sufficient in 2008 when the standard was created. At that time, most "web fonts" such as Verdana were only available in a normal and bold weight.
 
-Today, the proliferation of easily available web fonts of all sizes and weights has complicated the issue. The emerging WCAG 3.0 standard on visual contrast is known as the [Advanced Perceptual Contrast Algorithm (APCA)](https://www.myndex.com/APCA/simple), and takes into account font weights and sizes in a variable manner, relative to the predicted contrast value.
+Today, the proliferation of easily available web fonts of all sizes and weights has complicated the issue. The emerging WCAG 3.0 standard on visual contrast is known as the [Advanced Perceptual Contrast Algorithm (APCA)](https://www.myndex.com/APCA/), and takes into account font weights and sizes in a variable manner, relative to the predicted contrast value.
 
 [Non text elements such as icons also need adequate contrast for perception](https://www.w3.org/WAI/WCAG21/Techniques/general/G207).
 
@@ -349,13 +349,13 @@ To help us in our work, be it content design or determining accessibility, or ca
 
 The IEC standard for calculating relative luminance (Y) from an sRGB color is as follows:
 
-#### Step one: 8 bit integer to float
+#### Step one: 8-bit integer to float
 
-Convert 8 bit sRGB values to float (0.0 to 1.0) by dividing by 255.0:
+Convert 8-bit sRGB values to float (0.0 to 1.0) by dividing by 255.0:
 
 **R´<sub>float</sub> = R´<sub>8bit</sub> / 255.0 G´<sub>float</sub> = G´<sub>8bit</sub> / 255.0 B´<sub>float</sub> = B´<sub>8bit</sub> / 255.0**
 
-If your sRGB values are 16 bit then convert to decimal by dividing by 65535.
+If your sRGB values are 16-bit then convert to decimal by dividing by 65535.
 
 #### Step two: Linearize
 

@@ -62,7 +62,7 @@ For further info see [Cross Browser Audio Basics (HTML5 Audio In Detail)](/en-US
 
 The code above creates a video player of dimensions 640x480 pixels, displaying a poster image until the video is played. We instruct the video to autoplay but to be muted by default.
 
-> **Note:** The `autoplay` attribute may be ignored by some mobile browsers. Also, the autoplay feature can be controversial when misused. It's strongly recommended that you read the [Autoplay guide for media and Web Audio APIs](/en-US/docs/Web/Media/Autoplay_guide) to learn how to use autoplay wisely..
+> **Note:** The `autoplay` attribute may be ignored by some mobile browsers. Also, the autoplay feature can be controversial when misused. It's strongly recommended that you read the [Autoplay guide for media and Web Audio APIs](/en-US/docs/Web/Media/Autoplay_guide) to learn how to use autoplay wisely.
 
 For further info see [\<video> element](/en-US/docs/Web/HTML/Element/video) and [Creating a cross-browser video player](/en-US/docs/Web/Guide/Audio_and_video_delivery/cross_browser_video_player).
 
@@ -208,11 +208,11 @@ See [MediaRecorder API](/en-US/docs/Web/API/MediaStream_Recording_API) for more 
 
 ## Media Source Extensions (MSE)
 
-[Media Source Extensions](https://dvcs.w3.org/hg/html-media/raw-file/tip/media-source/media-source.html) is a W3C working draft that plans to extend {{domxref("HTMLMediaElement")}} to allow JavaScript to generate media streams for playback. Allowing JavaScript to generate streams facilitates a variety of use cases like adaptive streaming and time shifting live streams.
+[Media Source Extensions](https://w3c.github.io/media-source/) is a W3C working draft that plans to extend {{domxref("HTMLMediaElement")}} to allow JavaScript to generate media streams for playback. Allowing JavaScript to generate streams facilitates a variety of use cases like adaptive streaming and time shifting live streams.
 
 ### Encrypted Media Extensions (EME)
 
-[Encrypted Media Extensions](https://dvcs.w3.org/hg/html-media/raw-file/tip/encrypted-media/encrypted-media.html) is a W3C proposal to extend `HTMLMediaElement`, providing APIs to control playback of protected content.
+[Encrypted Media Extensions](https://w3c.github.io/encrypted-media/) is a W3C proposal to extend `HTMLMediaElement`, providing APIs to control playback of protected content.
 
 The API supports use cases ranging from simple clear key decryption to high value video (given an appropriate user agent implementation). License/key exchange is controlled by the application, facilitating the development of robust playback applications supporting a range of content decryption and protection technologies.
 
@@ -399,7 +399,7 @@ AddType video/webm webmv
 
 Your files may have been encoded incorrectly — try encoding using one of the following tools, which are proven to be pretty reliable:
 
-- [Audacity](http://audacity.sourceforge.net/) — Free Audio Editor and Recorder
+- [Audacity](https://sourceforge.net/projects/audacity/) — Free Audio Editor and Recorder
 - [Miro](https://www.getmiro.com/) — Free, open-source music and video player
 - [Handbrake](https://handbrake.fr/) — Open Source Video Transcoder
 - [Firefogg](http://firefogg.org/) — Video and Audio encoding for Firefox
